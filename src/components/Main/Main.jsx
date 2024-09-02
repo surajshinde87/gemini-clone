@@ -38,19 +38,19 @@ const Main = () => {
         </div>
         {/* Cards */}
         <div className="grid grid-cols-[repeat(auto-fill,_minmax(180px,_1fr))] gap-4 p-5">
-          <div className="h-[150px] lg:h-[200px] p-4 bg-slate-50 rounded-lg relative cursor-pointer hover:bg-slate-300">
+          <div className="h-[70px] lg:h-[200px] p-4 bg-slate-50 rounded-lg relative cursor-pointer hover:bg-slate-300">
             <p className='lg:text-xl'>Suggest beautiful pices to see on an upcoming road trip</p>
             <FaRegCompass className='w-[35px] p-1 absolute text-2xl rounded-2xl bottom-2 right-2'/>
           </div>
-          <div className="h-[150px] lg:h-[200px] p-4 bg-slate-50 rounded-lg relative cursor-pointer hover:bg-slate-300">
+          <div className="h-[70px] lg:h-[200px] p-4 bg-slate-50 rounded-lg relative cursor-pointer hover:bg-slate-300">
             <p className='lg:text-xl'>Briefly summarise this concept: urban planning</p>
             <FaRegLightbulb className='w-[35px] p-1 absolute text-2xl rounded-2xl bottom-2 right-2'/>
           </div>
-          <div className="h-[150px] lg:h-[200px] p-4 bg-slate-50 rounded-lg relative cursor-pointer hover:bg-slate-300">
+          <div className="h-[70px] lg:h-[200px] p-4 bg-slate-50 rounded-lg relative cursor-pointer hover:bg-slate-300">
             <p className='lg:text-xl'>Brainstorm team bonding activities for our work retreat</p>
             <RiMessage3Line className='w-[35px] p-1 absolute text-2xl rounded-2xl bottom-2 right-2'/>
           </div>
-          <div className="h-[150px] lg:h-[200px] p-4 bg-slate-50 rounded-lg relative cursor-pointer hover:bg-slate-300">
+          <div className="h-[70px] lg:h-[200px] p-4 bg-slate-50 rounded-lg relative cursor-pointer hover:bg-slate-300">
             <p className='lg:text-xl'>Improve the readability of the following code</p>
             <FaCode className='w-[35px] p-1 absolute text-2xl rounded-2xl bottom-2 right-2'/>
           </div>
@@ -82,10 +82,10 @@ const Main = () => {
   
        
        {/* Bottom */}
-        <div className="absolute w-full bottom-4 max-w-4xl px-5 m-auto">
-          <div className="flex items-center justify-between lg:gap-5 bg-slate-200 py-2 px-5 rounded-3xl relative">
+        <div className="absolute w-full bottom-0 max-w-4xl px-5 m-auto">
+          <div className="flex items-center justify-between lg:gap-5 bg-slate-200 p-1 lg:py-2 lg:px-5 rounded-3xl relative">
             {/* User Inputs Prompts */}
-            <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" className='flex-1 bg-transparent border-none outline-none p-2 text-2xl ' placeholder='Enter a prompt here' />
+            <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" className='flex-1 bg-transparent border-none outline-none p-2 lg:text-2xl ' placeholder='Enter a prompt here' />
             <div className="flex items-center lg:text-2xl gap-3 cursor-pointer">
               <GrGallery/>
               <IoMdMic/>
